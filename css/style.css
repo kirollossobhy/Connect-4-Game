@@ -1,0 +1,192 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin: 0;
+    color: #fff;
+    background-color: #000000;
+    flex-direction: column;
+}
+h1{
+    margin: 40px 0px;
+    font-size: 50px;
+    font-family: "Pacifico", cursive;
+    background-image: linear-gradient(to right, #dddddd, #007bff);
+    background-clip: text;
+    color: transparent;
+    isolation: isolate;
+}
+
+h2{
+    margin: 0;
+    font-size: 20px;
+}
+h3{
+    margin: 0;
+    font-size: 18px;
+}
+p{
+    margin: 0;
+    font-size: 22px;
+    
+}
+i{
+    font-size: 22px;
+}
+#connect4 {
+    display: grid;
+    grid-template-columns: repeat(7, 50px);
+    grid-gap: 5px;
+    width: 400px;
+    margin: auto;
+    background-color: #0056b3;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+.cell {
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.cell.red {
+    background-color: red;
+}
+.cell.yellow {
+    background-color: yellow;
+}
+#turnDisplay {
+    display: flex;
+    align-items: center;
+    gap: 105px;
+    font-size: 2rem;
+    font-weight: 800;
+    width: 400px;
+    margin: auto;
+    margin-bottom: 15px;
+}
+#winnerDisplay {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: green;
+}
+
+#currentPlayer {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: red;
+}
+#scoreDisplay {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 18px;
+}
+.ScoreCircle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.scoreCircle {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    /* margin-right: 5px; */
+}
+#redScoreCircle {
+    background-color: red;
+}
+#yellowScoreCircle {
+    background-color: yellow;
+}
+#modeSelection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 25px;
+    width: 100%;
+    margin: auto;
+}
+#modeSelection button {
+    width: 300px;
+    margin: 0 5px;
+    padding: 20px 70px;
+    font-size: 1em;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+#modeSelection button.active {
+    background-color: #0056b3;
+}
+#colorSelection {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 400px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#redPlayerButton{
+    background-color: red;
+    margin: 0 5px;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #000000;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+#redPlayerButton:hover{
+    background-color: rgb(195, 15, 15);
+
+}
+
+#yellowPlayerButton{
+    background-color: yellow;
+    margin: 0 5px;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #000000;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+#yellowPlayerButton:hover{
+    background-color: rgb(227, 227, 44);
+}
+#playAgainButton {
+    margin: 30px 0;
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #4feb16;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: auto; 
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+#playAgainButton:hover {
+    background-color: #2b9b27;
+}
